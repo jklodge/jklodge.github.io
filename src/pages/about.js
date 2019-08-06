@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
@@ -13,7 +13,7 @@ export const fluidImage = graphql`
       }
     }
   }
-`
+`;
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +22,7 @@ export default () => {
         ...fluidImage
       }
     }
-  `)
+  `);
   return (
     <Layout>
       <SEO title="About" />
@@ -41,23 +41,19 @@ export default () => {
         </div>
         <div className="about-contact">
           <h1>contact me</h1>
-          <p>email: jessicaklodge@gmail.com</p>
-          <div className="icons">
-            <a target="_blank" href="https://github.com/jklodge">
-              <i className="fab fa-github"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/jessicalodge/">
-              <i className="fab fa-linkedin"></i>
-            </a>
+          <p>
+            email:
             <a
-              target="_blank"
-              href="mailto:jessicaklodge@gmail.com?subject=Jess Lodge"
+              href="mailto:jessicaklodge@gmail.com?Subject=Hey%20Jess"
+              target="_top"
             >
-              <i className="fas fa-envelope-open"></i>
+              <span>
+                <br></br> jessicaklodge@gmail.com
+              </span>
             </a>
-          </div>
+          </p>
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};

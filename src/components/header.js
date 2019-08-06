@@ -1,59 +1,90 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      marginBottom: `1.45rem`,
+      marginBottom: `1.45rem`
     }}
   >
     <div
       style={{
-        margin: `9vh auto`,
+        margin: `0vh auto`,
         maxWidth: "100%",
-        padding: `0 6vw`,
+        padding: `9vh 6vw 6vh`,
         textAlign: "center",
-        display: "flex",
+        display: "flex"
       }}
     >
       <Link
         to="/about/"
+        className="tab"
         style={{
           color: `#202020`,
           textDecoration: `none`,
           fontWeight: `bold`,
           fontSize: "15px",
           flex: "1 1 0px",
-          textAlign: "left",
+          textAlign: "left"
         }}
       >
         ABOUT
       </Link>
 
-      <h3 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
+          className="tab"
           style={{
             color: `#202020`,
             textDecoration: `none`,
             fontSize: "24px",
-            flex: "0 0 auto",
+            flex: "0 0 auto"
           }}
         >
           {siteTitle}
         </Link>
-      </h3>
+      </h2>
+
+      <Link
+        to="/work/"
+        className="tab"
+        style={{
+          color: `#202020`,
+          textDecoration: `none`,
+          fontWeight: `bold`,
+          fontSize: "15px",
+          flex: "1 1 0px",
+          textAlign: "right"
+        }}
+      >
+        WORK
+      </Link>
+    </div>
+    <div className="contact">
+      <a target="_blank" href="https://github.com/jklodge">
+        <i className="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/jessicalodge/">
+        <i className="fab fa-linkedin"></i>
+      </a>
+      <a
+        target="_blank"
+        href="mailto:jessicaklodge@gmail.com?subject=Jess Lodge"
+      >
+        <i className="fas fa-envelope-open"></i>
+      </a>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;
