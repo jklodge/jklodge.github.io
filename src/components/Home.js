@@ -1,5 +1,6 @@
 import React from "react";
 import Work from "./Work";
+import HomeProjects from "./HomeProjects";
 
 export default () => {
   return (
@@ -14,7 +15,7 @@ export default () => {
           explore & tell me what you think about it!
         </p>
       </div>
-      <Work />
+      <HomeProjects />
     </main>
   );
 };

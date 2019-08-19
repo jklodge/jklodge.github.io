@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
         to="/about/"
         className="tab"
         style={{
-          color: `#202020`,
+          color: `#ef5d5d`,
           textDecoration: `none`,
           fontWeight: `bold`,
           fontSize: "15px",
@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           className="tab"
           style={{
-            color: `#202020`,
+            color: `#ef5d5d`,
             textDecoration: `none`,
             fontSize: "24px",
             flex: "0 0 auto"
@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => (
         to="/work/"
         className="tab"
         style={{
-          color: `#202020`,
+          color: `#ef5d5d`,
           textDecoration: `none`,
           fontWeight: `bold`,
           fontSize: "15px",

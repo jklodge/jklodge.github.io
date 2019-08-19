@@ -14,7 +14,7 @@ i:hover {
 }
 
 h2:hover {
-  border-bottom: #5588ee solid;
+  border-bottom: #ef5d5d solid;
   padding-bottom: 3px;
 }
 
@@ -76,7 +76,7 @@ a:link {
 }
 
 .border {
-  border-top: solid black 10px;
+  border-top: solid#ef5d5d 10px;
   margin: -0.5% 0.5%;
   width: 100%;
 }
@@ -100,8 +100,8 @@ a:link {
 
 @media (max-width: 490px) {
   .cardBox {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
   }
 }
 .overlay {
@@ -126,8 +126,40 @@ a:link {
   text-align: center;
 }
 
-.gatsby-image-wrapper {
+.cardBox .gatsby-image-wrapper {
   position: static !important;
+}
+
+.work-card {
+  width: 100%;
+  /* border: solid #221f1f 13px; */
+  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.work-card .gatsby-image-wrapper {
+  width: 100%;
+  height: 350px;
+  position: relative !important;
+}
+
+.work-container {
+  margin: 0 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 490px) {
+  .work-container {
+    margin: 0;
+  }
+}
+
+.title {
+  margin: 25px;
+  text-align: center;
 }
 
 .overlay:hover {
