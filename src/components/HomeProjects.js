@@ -20,7 +20,7 @@ export default () => {
       crimeno: file(relativePath: { eq: "crimeno.png" }) {
         ...fluidImage
       }
-      gays: file(relativePath: { eq: "gays.png" }) {
+      SonyMoulinRouge: file(relativePath: { eq: "SonyMoulinRouge.png" }) {
         ...fluidImage
       }
       crumbs: file(relativePath: { eq: "crumbs.png" }) {
@@ -116,23 +116,15 @@ export default () => {
         </div>
         <br />
         <div className="cardBox">
-          <a href="https://jesslodge.herokuapp.com/" target="_blank">
+          <a
+            href="https://wearebohemians.moulinrougemusicalalbum.com/#/home"
+            target="_blank"
+          >
             <div className="overlay">
-              <p>Crumbs Canvas</p>
-            </div>
-            <Card bg="info" text="white">
-              <Img fluid={data.crumbs.childImageSharp.fluid} />
-            </Card>
-          </a>
-        </div>
-        <br />
-        <div className="cardBox">
-          <a href="https://yearbook-awards.herokuapp.com/" target="_blank">
-            <div className="overlay">
-              <p>GAYS</p>
+              <p>Moulin Rouge x Sony</p>
             </div>
             <Card bg="secondary" text="white">
-              <Img fluid={data.gays.childImageSharp.fluid} />
+              <Img fluid={data.SonyMoulinRouge.childImageSharp.fluid} />
             </Card>
           </a>
         </div>

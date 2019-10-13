@@ -42,7 +42,7 @@ export default () => {
       activateWork: file(relativePath: { eq: "activate.png" }) {
         ...fluidImage
       }
-      laptopWork: file(relativePath: { eq: "laptop.png" }) {
+      SonyMoulinRouge: file(relativePath: { eq: "SonyMoulinRouge.png" }) {
         ...fluidImage
       }
 
@@ -58,7 +58,50 @@ export default () => {
       <div className="workPage"></div>
       <div className="cardContainer">
         <div className="border"></div>
-        <h1 className="title">Adobe Experience Manager</h1>
+        <h1 className="title">Angular 2/Spotify API - Sony</h1>
+        <div className="work-container">
+          <div className="work-card">
+            <a
+              href="https://wearebohemians.moulinrougemusicalalbum.com/#/home"
+              target="_blank"
+            >
+              <Img fluid={data.SonyMoulinRouge.childImageSharp.fluid} />
+            </a>
+          </div>
+        </div>
+        <br />
+        <h1 className="title">Technical Liasion - Google</h1>
+        <div className="work-container">
+          <div className="work-card">
+            <a
+              href="https://artsexperiments.withgoogle.com/poemportraits"
+              target="_blank"
+            >
+              <Img fluid={data.poemportraitsWork.childImageSharp.fluid} />
+            </a>
+          </div>
+          <div className="work-card">
+            <a
+              href="https://learndigital.withgoogle.com/activate"
+              target="_blank"
+            >
+              <Img fluid={data.activateWork.childImageSharp.fluid} />
+            </a>
+          </div>
+          <br />
+        </div>
+        <h1 className="title">React/Redux - PowWowNow</h1>
+        <div className="work-container">
+          <div className="work-card">
+            <a href="https://www.powwownow.co.uk/sign-in" target="_blank">
+              <Img fluid={data.powwowWork.childImageSharp.fluid} />
+            </a>
+          </div>
+        </div>
+        <br />
+        <h1 className="title">
+          Vanilla JS/Adobe Experience Manager - selfridges
+        </h1>
         <div className="work-container">
           <div className="work-card">
             <a
@@ -82,36 +125,7 @@ export default () => {
           </div>
         </div>
         <br />
-        <h1 className="title">Technical Liasion</h1>
-        <div className="work-container">
-          <div className="work-card">
-            <a
-              href="https://artsexperiments.withgoogle.com/poemportraits"
-              target="_blank"
-            >
-              <Img fluid={data.poemportraitsWork.childImageSharp.fluid} />
-            </a>
-          </div>
-          <div className="work-card">
-            <a
-              href="https://learndigital.withgoogle.com/activate"
-              target="_blank"
-            >
-              <Img fluid={data.activateWork.childImageSharp.fluid} />
-            </a>
-          </div>
-          <br />
-        </div>
-        <h1 className="title">React/Redux</h1>
-        <div className="work-container">
-          <div className="work-card">
-            <a href="https://www.powwownow.co.uk/sign-in" target="_blank">
-              <Img fluid={data.powwowWork.childImageSharp.fluid} />
-            </a>
-          </div>
-        </div>
-        <br />
-        <h1 className="title">React/Node/Express</h1>
+        <h1 className="title">Fun Side Project - React/Node/Express</h1>
         <div className="work-container">
           <div className="work-card">
             <a href="http://www.crimeno.com" target="_blank">
@@ -126,7 +140,7 @@ export default () => {
           </div>
         </div>
         <br />
-        <h1 className="title">P5.js Canvas</h1>
+        <h1 className="title">Fun Side Project - P5.js Canvas</h1>
         <div className="work-container">
           <div className="work-card">
             <a href="https://jesslodge.herokuapp.com/" target="_blank">
