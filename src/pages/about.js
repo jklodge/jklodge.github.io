@@ -14,7 +14,7 @@ export const fluidImage = graphql`
 `;
 
 export default () => {
-  const data = useStaticQuery(graphql`
+  useStaticQuery(graphql`
     query {
       jessbg: file(relativePath: { eq: "jessbg.jpg" }) {
         ...fluidImage
