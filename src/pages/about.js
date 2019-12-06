@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
-import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -45,6 +43,7 @@ export default () => {
             email:
             <a
               href="mailto:jessicaklodge@gmail.com?Subject=Hey%20Jess"
+              rel="noopener noreferrer"
               target="_top"
             >
               <span>

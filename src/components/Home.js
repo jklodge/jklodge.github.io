@@ -1,5 +1,4 @@
 import React from "react";
-import Work from "./Work";
 import HomeProjects from "./HomeProjects";
 
 export default () => {

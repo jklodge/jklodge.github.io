@@ -54,7 +54,11 @@ export default () => {
       <div className="cardContainer">
         <div className="border"></div>
         <div className="cardBox">
-          <a href="https://audemarspiguet.ft.com/" target="_blank">
+          <a
+            href="https://audemarspiguet.ft.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="overlay">
               <p>Financial Times x Audemars Piguet</p>
             </div>
@@ -66,6 +70,7 @@ export default () => {
         <div className="cardBox">
           <a
             href="https://www.selfridges.com/GB/en/features/articles/selfridges-loves/the-rolling-stones-at-selfridges/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <div className="overlay">
@@ -80,6 +85,7 @@ export default () => {
         <div className="cardBox">
           <a
             href="https://artsexperiments.withgoogle.com/poemportraits"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <div className="overlay">
@@ -92,7 +98,11 @@ export default () => {
         </div>
         <br />
         <div className="cardBox">
-          <a href="https://www.powwownow.co.uk/sign-in" target="_blank">
+          <a
+            href="https://www.powwownow.co.uk/sign-in"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="overlay">
               <p>PowWowNow</p>
             </div>
@@ -103,7 +113,11 @@ export default () => {
         </div>
         <br />
         <div className="cardBox">
-          <a href="http://www.crimeno.com" target="_blank">
+          <a
+            href="http://www.crimeno.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="overlay">
               <p>CrimeNo</p>
             </div>
@@ -116,6 +130,7 @@ export default () => {
         <div className="cardBox">
           <a
             href="https://www.selfridges.com/QA/en/features/articles/radical-luxury/radical-luxury-at-selfridges/https://www.selfridges.com/QA/en/features/articles/radical-luxury/radical-luxury-at-selfridges/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <div className="overlay">
@@ -130,6 +145,7 @@ export default () => {
         <div className="cardBox">
           <a
             href="https://wearebohemians.moulinrougemusicalalbum.com/#/home"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <div className="overlay">

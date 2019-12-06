@@ -63,14 +63,23 @@ const Header = ({ siteTitle }) => (
       </Link>
     </div>
     <div className="contact">
-      <a target="_blank" href="https://github.com/jklodge">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/jklodge"
+      >
         <i className="fab fa-github"></i>
       </a>
-      <a target="_blank" href="https://www.linkedin.com/in/jessicalodge/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/jessicalodge/"
+      >
         <i className="fab fa-linkedin"></i>
       </a>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="mailto:jessicaklodge@gmail.com?subject=Jess Lodge"
       >
         <i className="fas fa-envelope-open"></i>
