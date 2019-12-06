@@ -45,7 +45,9 @@ export default () => {
       SonyMoulinRouge: file(relativePath: { eq: "SonyMoulinRouge.png" }) {
         ...fluidImage
       }
-
+      audemars: file(relativePath: { eq: "audemars.png" }) {
+        ...fluidImage
+      }
       site {
         siteMetadata {
           title
@@ -58,6 +60,16 @@ export default () => {
       <div className="workPage"></div>
       <div className="cardContainer">
         <div className="border"></div>
+        <h1 className="title">
+          Vanilla Javascript/Hugo Template - Financial Times x Audemars Piguet
+        </h1>
+        <div className="work-container">
+          <div className="work-card">
+            <a href="https://audemarspiguet.ft.com/" target="_blank">
+              <Img fluid={data.audemars.childImageSharp.fluid} />
+            </a>
+          </div>
+        </div>
         <h1 className="title">Angular 2/Spotify API - Sony</h1>
         <div className="work-container">
           <div className="work-card">

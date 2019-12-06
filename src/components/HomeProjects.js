@@ -38,7 +38,9 @@ export default () => {
       powwow: file(relativePath: { eq: "powwow.png" }) {
         ...fluidImage
       }
-
+      audemars: file(relativePath: { eq: "audemars.png" }) {
+        ...fluidImage
+      }
       site {
         siteMetadata {
           title
@@ -51,6 +53,16 @@ export default () => {
       <div className="workPage"></div>
       <div className="cardContainer">
         <div className="border"></div>
+        <div className="cardBox">
+          <a href="https://audemarspiguet.ft.com/" target="_blank">
+            <div className="overlay">
+              <p>Financial Times x Audemars Piguet</p>
+            </div>
+            <Card bg="primary" text="white">
+              <Img fluid={data.audemars.childImageSharp.fluid} />
+            </Card>
+          </a>
+        </div>
         <div className="cardBox">
           <a
             href="https://www.selfridges.com/GB/en/features/articles/selfridges-loves/the-rolling-stones-at-selfridges/"
